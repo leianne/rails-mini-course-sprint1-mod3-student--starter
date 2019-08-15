@@ -37,7 +37,13 @@ Write all of your answers to the questions below in a separate readme named SOLU
 First, start the rails server. Then, make a request to `/tasks/new`, fill out the form and submit it in order to create a new task.
 
 1. What controller and action handles the data from the form submission?
+
+The "view" sends the data to the "controller" and from there the countroller sends the info to the "model" and the info is stored in the DB.
+
 2. What controller and action would be used if you did a `GET` request on the `/users` route?
+
+The Rails router  would send a request to  the "Users  Controller" and the "Users  Controller" would then send a request to the "Users  Model" asking for all  the users in the DB. The "Users  model" would send that info back and then  the "Uders controller" would send that to the "Users View" which then sends it back  to the controller  and  back  to the browser.
+
 3. Write out the step-by-step process that your rails application will take to render the `tasks/new` route.
 4. What file is responsible for managing the mapping between your application and the `tasks` database table?
 
